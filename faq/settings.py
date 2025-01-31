@@ -34,9 +34,12 @@ INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
+    'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'faqApp'
+    'ckeditor',
+    'faqApp.apps.FaqappConfig',
+    'rest_framework'
 ]
 
 MIDDLEWARE = [
