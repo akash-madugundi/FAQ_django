@@ -15,6 +15,7 @@ def get_faqs(request):
 
     faqs_cache_key = f"faqs_{lang}"
     cached_faqs = cache.get(faqs_cache_key)
+
     if cached_faqs:
         return Response(cached_faqs)
     

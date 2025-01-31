@@ -18,6 +18,7 @@ class FAQApiTest(TestCase):
             question="What is the tallest mountain in the world?",
             answer="Mount Everest"
         )
+
         self.faq_api_1.save()
         self.faq_api_2.save()
 
@@ -30,6 +31,7 @@ class FAQApiTest(TestCase):
         self.assertEqual(data[1]['question'], self.faq_api_2.question)
         self.assertEqual(data[1]['answer'], self.faq_api_2.answer)
 
+
     def test_get_faqs_hindi_lang(self):
         response = self.client.get('/api/faqs/?lang=hi')
         self.assertEqual(response.status_code, status.HTTP_200_OK)
@@ -38,6 +40,7 @@ class FAQApiTest(TestCase):
         self.assertEqual(data[0]['answer'], self.faq_api_1.lang_hi_answer)
         self.assertEqual(data[1]['question'], self.faq_api_2.lang_hi)
         self.assertEqual(data[1]['answer'], self.faq_api_2.lang_hi_answer)
+
 
     def test_get_faqs_bengali_lang(self):
         response = self.client.get('/api/faqs/?lang=bn')
@@ -48,6 +51,7 @@ class FAQApiTest(TestCase):
         self.assertEqual(data[1]['question'], self.faq_api_2.lang_bn)
         self.assertEqual(data[1]['answer'], self.faq_api_2.lang_bn_answer)
 
+
     def test_get_faqs_french_lang(self):
         response = self.client.get('/api/faqs/?lang=fr')
         self.assertEqual(response.status_code, status.HTTP_200_OK)
@@ -56,3 +60,4 @@ class FAQApiTest(TestCase):
         self.assertEqual(data[0]['answer'], self.faq_api_1.lang_fr_answer)
         self.assertEqual(data[1]['question'], self.faq_api_2.lang_fr)
         self.assertEqual(data[1]['answer'], self.faq_api_2.lang_fr_answer)
+        
