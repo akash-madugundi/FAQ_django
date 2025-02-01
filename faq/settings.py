@@ -118,7 +118,8 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 CACHES = {
     'default': {
         'BACKEND': 'django_redis.cache.RedisCache',
-        'LOCATION': 'redis://127.0.0.1:6379/1',
+        'LOCATION': "redis://django-redis:6379/1",      ## for curl and postman requests, runs in Docker Compose network
+        # 'LOCATION': "redis://localhost:6379/1",       ## for testing tests folder locally
         'OPTIONS': {
             'CLIENT_CLASS': 'django_redis.client.DefaultClient',
         },

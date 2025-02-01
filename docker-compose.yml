@@ -1,0 +1,20 @@
+services:
+  web:
+    build: .
+    container_name: django_app
+    command: python manage.py runserver 0.0.0.0:8000
+    volumes:
+      - .:/app
+    ports:
+      - "8000:8000"
+    depends_on:
+      - django-redis
+    environment:
+      - DEBUG=True
+      - ALLOWED_HOSTS=*
+
+  django-redis:
+    image: redis:latest
+    container_name: django-redis
+    ports:
+      - "6379:6379"

@@ -1,0 +1,16 @@
+Django==5.1.5
+djangorestframework==3.15.2
+django-ckeditor==6.7.2
+django-redis==5.4.0
+redis==5.2.1
+googletrans==4.0.0rc1
+django-js-asset==3.0.1
+hiredis==3.1.0
+
+# Development tools (optional)
+flake8==7.1.1
+pytest==8.3.4
+pytest-django==4.9.0
+
+# Timezone support (optional)
+tzdata==2025.1

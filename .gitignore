@@ -1,0 +1,15 @@
+# Ignore Python bytecode files
+_pycache_/
+*.pyc
+
+# Ignore pytest cache
+.pytest_cache/
+
+# Ignore SQLite database
+db.sqlite3
+
+# Ignore pipenv files if using Docker or production environments
+Pipfile.lock
+
+# Ignore environment variables file
+.env
