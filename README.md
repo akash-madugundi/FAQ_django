@@ -9,6 +9,7 @@ This project is a **Multilingual FAQ System** built with Django and Django REST 
 - **Rich Text Editing**: Integrated **django-ckeditor** for enhanced FAQ content formatting.
 - **Caching with Redis**: Efficient caching using Redis to speed up API responses.
 - **Dockerized**: Easy deployment using Docker for both Django and Redis.
+- **PEP8**: Followed PEP8 compliance and modularity.
 
 ---
 
@@ -20,13 +21,13 @@ This project is a **Multilingual FAQ System** built with Django and Django REST 
 
 ## Installation
 
-### Clone the Repository
+#### Clone the Repository
 ```bash
 git clone <repository-url>
 cd FAQ-django
 ```
 
-### Running the Project with Docker (Recommended)
+#### Running the Project with Docker (Recommended)
 ```bash
 docker-compose up --build
 ```
@@ -88,6 +89,14 @@ docker-compose down
       ```
       http://127.0.0.1:8000/api/faqs/
       ```
+      
+---
+
+## Admin Interface
+  - Access the Django admin panel at `http://localhost:8000/admin/` using the superuser credentials
+    - Username: *akash*
+    - Password: *12345*
+
 ---
 
 ## Running Tests
