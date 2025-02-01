@@ -36,7 +36,8 @@ docker-compose up --build
 ```bash
 docker-compose down
 ```
-
+##### <ins>NOTE:</ins>
+  - Deployment could not be done as there are no free resources (Heroku and AWS are paid CLIs)    
 ---
 
 ## API Examples
@@ -67,7 +68,7 @@ docker-compose down
     ```
     http://localhost:8000/api/faqs/?lang=te
     ```
-    ##### NOTE:
+    ##### <ins>NOTE:</ins>
     - **Predefined Languages:** `hi` (Hindi), `bn` (Bengali), `fr` (French)  
       *Retrieving FAQs in these languages is faster than others.*
 
@@ -83,7 +84,7 @@ docker-compose down
     http://localhost:8000/api/faqs/create/
     ```
 
-##### NOTE:
+##### <ins>NOTE:</ins>
   - **Alternative URL:**  
       If `localhost` doesn’t work, use:  
       ```
