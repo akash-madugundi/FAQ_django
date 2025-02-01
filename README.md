@@ -79,7 +79,7 @@ docker-compose down
     curl -X POST http://localhost:8000/api/faqs/create/ -H "Content-Type: application/json" -d "{\"question\": \"What is the capital of India?\", \"answer\": \"New Delhi\"}"
     ```
   #### Using Postman
-  - Goto Body -> Select raw -> Attach question and answer using key-value in JSON format, then run this command-
+  - Goto Body -> Select raw -> Attach question and answer using key-value in JSON format, then POST using url-
     ```bash
     http://localhost:8000/api/faqs/create/
     ```
@@ -113,7 +113,7 @@ docker-compose down
         }
     }
     ```
-  - Then, run-
+  - Then, run- (<ins>Note:</ins> Run this in new terminal)
     ```bash
     pytest
     ```
