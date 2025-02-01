@@ -28,6 +28,7 @@ cd FAQ-django
 ```
 
 #### Running the Project with Docker (Recommended)
+- Start Docker Engine
 ```bash
 docker-compose up --build
 ```
