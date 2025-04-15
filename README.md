@@ -25,6 +25,7 @@ This project is a **Multilingual FAQ System** built with Django and Django REST 
 ```bash
 git clone <repository-url>
 cd FAQ-django
+pip install -r requirements.txt
 ```
 
 #### Running the Project with Docker (Recommended)
